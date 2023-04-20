@@ -1,0 +1,65 @@
+
+signal catchers must be thread aware!
+
+client/server backtest model with OpenCL support
+
+multi-strats
+messages for all conditions for "show strat", domino unlocks
+
+TODO: Validate fisher seems off
+
+backtest engines: ocl, single threaded cpu with charts/logs, multi-threaded cpu
+
+move stoploss, etc to strats
+strategy settings / user interface
+strategy init flags for indicator needs / speed (strats should subscribe to indicators)
+fix git ssh auth
+orders (exchange submissions, monitoring, reporting, adhoc)
+CURL timeouts & retries
+event system
+graph export for short / long's (gnuplot?)
+iteration testing (option to disable market log and only produce perf stats)
+redo exchange & strategy modules with POSIX dl framework (ha!)
+decide what to do with order_candles
+
+db integration:
+db order history
+db winloss history
+db state save (market resume)
+
+exchanges:
+coinbase support ** almost done but need rewrite **
+kraken support
+gemini support
+etc ...
+
+irc:
+pretty up the irc user stuff
+logging to user-defined channels
+
+strats:
+macd example strat
+sma example strat
+multi (sma+macd) example strat
+hodl strat
+aggressive strat
+
+wip:
+user interface stuff *** SOME DONE ***
+docdrow strat
+more API error checking
+
+complete:
+end backtest when you're out of money :-)
+minprofit
+trailing stoploss
+modular strategies
+modular exchanges
+short/long framework
+backtest framework
+exchange info / fees / products 
+scaling trailing stoploss
+fix candle timestamps on all non-zero intervals
+myfree/mymalloc stats
+redo header / dependencies with #ifndef's
+
